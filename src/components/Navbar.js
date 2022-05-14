@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import LoginButton from "./LoginButton";
 import LogoutButton from "./LogoutButton";
@@ -10,6 +10,12 @@ function Navbar() {
   if (token) {
     isAuthenticated = true;
   }
+
+  useEffect(() => {
+    if (token) {
+      console.log(token);
+    }
+  }, [token]);
 
   return (
     <header className="text-gray-600 body-font">
@@ -31,8 +37,7 @@ function Navbar() {
             Pricing
           </Link>
         </nav>
-        <LoginButton />
-        <LogoutButton />
+        {isAuthenticated ? <LogoutButton /> : <LoginButton />}
       </div>
     </header>
   );
