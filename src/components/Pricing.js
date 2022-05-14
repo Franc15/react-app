@@ -344,7 +344,7 @@ const Pricing = () => {
                     <path d="M20 6L9 17l-5-5"></path>
                   </svg>
                 </span>
-                Francis's girlfriend
+                Francis's phone
               </p>
               <p class="flex items-center text-gray-600 mb-2">
                 <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
@@ -360,7 +360,7 @@ const Pricing = () => {
                     <path d="M20 6L9 17l-5-5"></path>
                   </svg>
                 </span>
-                Sexy girls in town
+                Some cool stuff
               </p>
               <p class="flex items-center text-gray-600 mb-6">
                 <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
