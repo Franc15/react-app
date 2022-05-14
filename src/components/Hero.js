@@ -32,7 +32,7 @@ const Hero = () => {
             Hey, that's my picture on Mars😊😊
           </div>
 
-          <div className="absolute md:w-48 bottom-0 left-0 m-10 rounded-md p-4 text-black bg-white shadow-lg">
+          <div className="hidden md:block absolute md:w-48 bottom-0 left-0 m-10 rounded-md p-4 text-black bg-white shadow-lg">
             Bridget's birthday is coming up!🎂
           </div>
         </div>
