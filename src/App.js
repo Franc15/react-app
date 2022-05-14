@@ -4,7 +4,7 @@ import Login from "./components/Login";
 import Pricing from "./components/Pricing";
 import Signup from "./components/Signup";
 import Testimonials from "./components/Testimonials";
-import Navbar from "./Navbar";
+import Navbar from "./components/Navbar";
 import { Routes, Route } from "react-router-dom";
 
 export default function App() {
