@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -7,7 +7,7 @@ const Login = () => {
   const [error, setError] = useState("");
   const navigate = useNavigate();
   useEffect(() => {
-    if (localStorage.getItem("token")) {
+    if (localStorage.getItem("key")) {
       navigate("/");
     }
   }, []);
@@ -31,8 +31,9 @@ const Login = () => {
     )
       .then((res) => res.json())
       .then((res) => {
-        if (res.token) {
-          localStorage.setItem("token", res.token);
+        if (res.key) {
+          console.log(res.key);
+          localStorage.setItem("key", res.key);
           navigate("/");
         } else {
           setError(res.message);
