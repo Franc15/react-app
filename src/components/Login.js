@@ -38,7 +38,7 @@ const Login = () => {
           Log in
         </button>
         <p class="text-xs text-gray-500 mt-3">
-          Have an account? <Link to="signup">Click here.</Link>
+          Have an account? <Link to="/signup">Click here.</Link>
         </p>
       </div>
     </div>

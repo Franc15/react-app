@@ -1,5 +1,5 @@
 import Footer from "./components/Footer";
-import Hero from "./components/Hero";
+import Home from "./components/Home";
 import Login from "./components/Login";
 import Pricing from "./components/Pricing";
 import Signup from "./components/Signup";
@@ -12,7 +12,7 @@ export default function App() {
     <div>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Hero />} exact />
+        <Route path="/" element={<Home />} exact />
         <Route path="login" element={<Login />} />
         <Route path="pricing" element={<Pricing />} />
         <Route path="signup" element={<Signup />} />
