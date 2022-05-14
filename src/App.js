@@ -6,6 +6,9 @@ import Signup from "./components/Signup";
 import Testimonials from "./components/Testimonials";
 import Navbar from "./components/Navbar";
 import { Routes, Route } from "react-router-dom";
+import Services from "./components/Services";
+import SendData from "./components/SendData";
+import Checkout from "./components/Checkout";
 
 export default function App() {
   return (
@@ -15,8 +18,10 @@ export default function App() {
         <Route path="/" element={<Home />} exact />
         <Route path="login" element={<Login />} />
         <Route path="pricing" element={<Pricing />} />
-        <Route path="signup" element={<Signup />} />
+        <Route path="services" element={<Services />} />
         <Route path="testimonials" element={<Testimonials />} />
+        <Route path="send" element={<SendData />} />
+        <Route path="checkout" element={<Checkout />} />
       </Routes>
       <Footer />
     </div>
