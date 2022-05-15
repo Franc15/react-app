@@ -5,7 +5,7 @@ const PricingItem = () => {
     <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
       <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
         <h2 class="text-sm tracking-widest title-font mb-1 font-medium">
-          BUSINESS
+          BUSINESS?
         </h2>
         <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
           <span>$56</span>

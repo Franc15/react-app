@@ -10,12 +10,12 @@ const Hero = () => {
           </h1>
           <p class="mb-8 leading-relaxed">
             Do you want to remember your first words when you were born? Do you
-            want to show your kids their family tree? Memory.Inc got you
+            want to show your kids their family tree? BenMemory got you
             covered. Our goal is to preserve your memories, no matter how small
             or big at an affordable price. Memories you can access wherever and
             whenever, and here is the best part, there is no limit to what you
             can store. <br />
-            So why wait, join Memory.Inc now and have more headspace to create
+            So why wait, join BeMemory now and have more headspace to create
             more memories!
           </p>
           <div class="flex justify-center">
