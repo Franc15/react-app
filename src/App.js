@@ -9,6 +9,7 @@ import { Routes, Route } from "react-router-dom";
 import Services from "./components/Services";
 import SendData from "./components/SendData";
 import Checkout from "./components/Checkout";
+import Page404 from "./components/404";
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
         <Route path="testimonials" element={<Testimonials />} />
         <Route path="send" element={<SendData />} />
         <Route path="checkout" element={<Checkout />} />
+        <Route path="*" element={<Page404 />} />
       </Routes>
       <Footer />
     </div>

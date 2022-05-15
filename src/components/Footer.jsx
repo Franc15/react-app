@@ -3,17 +3,19 @@ const Footer = () => {
     <footer class="text-gray-600 body-font">
       <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
         <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-          <span class="ml-3 text-xl">Marz</span>
+          <span className="ml-3 text-red-900 text-xl">Be</span>
+          <span className="text-gray-900 text-xl">Memory</span>
         </a>
         <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
-          © 2020 Marz —
+          © 2020 <span className="ml-3 text-red-900">Be</span>
+          <span className="text-gray-900">Memory</span> —
           <a
             href="https://twitter.com/knyttneve"
             class="text-gray-600 ml-1"
             rel="noopener noreferrer"
             target="_blank"
           >
-            @marzinternational
+            @bememory
           </a>
         </p>
         <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
