@@ -7,7 +7,7 @@ const Footer = () => {
           <span className="text-gray-900 text-xl">Memory</span>
         </a>
         <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
-          © 2020 <span className="ml-3 text-red-900">Be</span>
+          © 2022 <span className="ml-3 text-red-900">Be</span>
           <span className="text-gray-900">Memory</span> —
           <a
             href="https://twitter.com/knyttneve"
