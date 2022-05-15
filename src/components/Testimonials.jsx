@@ -19,17 +19,18 @@ const Testimonials = () => {
                 src="https://i.pinimg.com/originals/60/54/64/605464adbbbd633f9dd4aea6e3e069fc.png"
               />
               <p class="leading-relaxed">
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution of letters, as opposed to using 'Content
-                here, content here',
+                I have always been the most sentimental in my family that it is
+                hard for me to let go of my worn-out socks from a family
+                vacation, I want to leave a mark, I always say. BeMemory has
+                helped me by offering wonderful packages where I can store audio
+                and images on cool spaces such as the Moon. My legacy is set and
+                that puts me at ease.
               </p>
               <span class="inline-block h-1 w-10 rounded bg-red-500 mt-6 mb-4"></span>
               <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">
-                PASCAL GIHOZO
+                BLESSING GATSI
               </h2>
-              <p class="text-gray-500">Software Engineer</p>
+              <p class="text-gray-500">Housewife</p>
             </div>
           </div>
           <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
@@ -40,15 +41,14 @@ const Testimonials = () => {
                 src="https://i.pinimg.com/originals/60/54/64/605464adbbbd633f9dd4aea6e3e069fc.png"
               />
               <p class="leading-relaxed">
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution of letters, as opposed to using 'Content
-                here, content here',
+                It is a dream come true to be able to leave an indelible mark
+                for my future generations to see. I am satisfied to know that I
+                can share my knowledge with them. I can write my own story and
+                none in a history book can distort or hide the truth.
               </p>
               <span class="inline-block h-1 w-10 rounded bg-red-500 mt-6 mb-4"></span>
               <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">
-                EMMANUEL CONGO
+                MITCHELL KIKULWE
               </h2>
               <p class="text-gray-500">Data Analyst</p>
             </div>
@@ -61,17 +61,14 @@ const Testimonials = () => {
                 src="https://i.pinimg.com/originals/60/54/64/605464adbbbd633f9dd4aea6e3e069fc.png"
               />
               <p class="leading-relaxed">
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution of letters, as opposed to using 'Content
-                here, content here',
+                I was so happy and too excited to send my face to space. A
+                lifetime goal!
               </p>
               <span class="inline-block h-1 w-10 rounded bg-red-500 mt-6 mb-4"></span>
               <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">
-                BRIDGET ZIM
+                LAURA MONROE
               </h2>
-              <p class="text-gray-500">CEO</p>
+              <p class="text-gray-500">Chef</p>
             </div>
           </div>
         </div>

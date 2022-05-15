@@ -32,8 +32,9 @@ const Login = () => {
       .then((res) => res.json())
       .then((res) => {
         if (res.key) {
-          console.log(res.key);
+          console.log(res);
           localStorage.setItem("key", res.key);
+          localStorage.setItem("user", res.user.id);
           navigate("/");
         } else {
           setError(res.message);

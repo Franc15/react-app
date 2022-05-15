@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ethers } from "ethers";
+import { useNavigate } from "react-router-dom";
 
 const startPayment = async ({ setError, setTxs, ether, addr }) => {
   try {
@@ -23,6 +24,13 @@ const startPayment = async ({ setError, setTxs, ether, addr }) => {
 };
 
 export default function Checkout() {
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (!localStorage.getItem("key")) {
+      navigate("/login");
+    }
+  }, []);
+
   const [error, setError] = useState();
   const [txs, setTxs] = useState([]);
 
@@ -50,7 +58,7 @@ export default function Checkout() {
               <input
                 type="text"
                 name="addr"
-                className="input input-bordered block w-full focus:ring focus:outline-none"
+                className="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 placeholder="Recipient Address"
               />
             </div>
@@ -58,7 +66,7 @@ export default function Checkout() {
               <input
                 name="ether"
                 type="text"
-                className="input input-bordered block w-full focus:ring focus:outline-none"
+                className="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 placeholder="Amount in ETH"
               />
             </div>
@@ -67,11 +75,13 @@ export default function Checkout() {
         <footer className="p-4">
           <button
             type="submit"
-            className="btn btn-primary submit-button focus:ring focus:outline-none w-full"
+            className="bg-red-500 text-white rounded-md px-10 py-2 focus:ring focus:outline-none w-full"
           >
             Pay now
           </button>
-          <div>{error}</div>
+          <div className="bg-red-300 text-black p-2 w-full mt-4 rounded-sm">
+            {error}
+          </div>
         </footer>
       </div>
     </form>

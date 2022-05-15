@@ -1,11 +1,16 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { getLocations } from "../services/Utility";
 
 const SendData = (props) => {
-  const [name, setName] = useState("");
+  const [medium, setMedium] = useState("");
   const [location, setLocation] = useState("");
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
+
+  const locations = getLocations();
+  const user = localStorage.getItem("user");
+  console.log(user);
 
   const navigate = useNavigate();
   useEffect(() => {
@@ -14,15 +19,19 @@ const SendData = (props) => {
     }
   }, []);
 
+  if (!localStorage.getItem("key")) {
+    navigate("/login");
+  }
+
   function handleClick() {
-    console.log(name, location, message);
+    console.log(localStorage.getItem("user"));
     let data = {
-      client: 1,
+      client: localStorage.getItem("user"),
       location: location,
       text: message,
-      medium: "sticky notes",
+      medium: medium,
     };
-    fetch("https://django-cloudrun-lsmeeds47a-uc.a.run.app/api/textpackage/", {
+    fetch("https://django-cloudrun-lsmeeds47a-uc.a.run.app/textpackage/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -41,6 +50,10 @@ const SendData = (props) => {
       })
       .catch((err) => console.log(err));
   }
+
+  //   for (let location of locations.values()) {
+  //     console.log(location.name);
+  //   }
 
   return (
     <section class=" body-font relative">
@@ -62,18 +75,7 @@ const SendData = (props) => {
             Write a message/quote that you want to be displayed with your name
             in Mars
           </p>
-          <div class="relative mb-4">
-            <label for="name" class="leading-7 text-sm text-gray-600">
-              Name
-            </label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              class="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-              onChange={(e) => setName(e.target.value)}
-            />
-          </div>
+
           <div class="relative mb-4">
             <label for="email" class="leading-7 text-sm text-gray-600">
               Location
@@ -82,10 +84,26 @@ const SendData = (props) => {
               className="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
               onChange={(e) => setLocation(e.target.value)}
             >
+              <option value="">Select Location</option>
               <option value="1">Mars</option>
-              <option value="2">Earth</option>
-              <option value="3">Venus</option>
+              <option value="2">Moon</option>
+              <option value="3">Earth</option>
+              {/* {locations.map((location) => (
+                <option value={location}>{location}</option>
+              ))} */}
             </select>
+          </div>
+          <div class="relative mb-4">
+            <label for="medium" class="leading-7 text-sm text-gray-600">
+              Medium
+            </label>
+            <input
+              type="text"
+              id="medium"
+              name="medium"
+              class="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              onChange={(e) => setMedium(e.target.value)}
+            />
           </div>
           <div class="relative mb-4">
             <label for="message" class="leading-7 text-sm text-gray-600">
