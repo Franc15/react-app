@@ -10,11 +10,11 @@ const Hero = () => {
           </h1>
           <p class="mb-8 leading-relaxed">
             Do you want to remember your first words when you were born? Do you
-            want to show your kids their family tree? BenMemory got you
-            covered. Our goal is to preserve your memories, no matter how small
-            or big at an affordable price. Memories you can access wherever and
-            whenever, and here is the best part, there is no limit to what you
-            can store. <br />
+            want to show your kids their family tree? BenMemory got you covered.
+            Our goal is to preserve your memories, no matter how small or big at
+            an affordable price. Memories you can access wherever and whenever,
+            and here is the best part, there is no limit to what you can store.{" "}
+            <br />
             So why wait, join BeMemory now and have more headspace to create
             more memories!
           </p>
@@ -33,7 +33,7 @@ const Hero = () => {
             alt="hero"
             src="https://www.pngitem.com/pimgs/b/267-2675114_earth-cartoon-png.png"
           />
-          <div className="absolute md:w-48 top-20 right-4 rounded-md p-4 text-black bg-white shadow-lg">
+          <div className="hidden absolute md:w-48 top-20 right-4 rounded-md p-4 text-black bg-white shadow-lg">
             Hey, that's my picture on Mars😊😊
           </div>
 
