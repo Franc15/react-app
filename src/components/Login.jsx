@@ -45,8 +45,12 @@ const Login = () => {
 
   return (
     <div className="container px-5 py-24 mx-auto flex">
-      <div className="hidden md:flex bg-gray-500 ">
-        <img src="" alt="" />
+      <div className="hidden md:flex">
+        <img
+          src="https://down-yuantu.pngtree.com/wotu/element_our/27/83/91/27839152-8349e448e24ba0a675f7ec2e07697a60.png?e=1652598469&st=ZGUxMTUwNThjYTRmNzUzMzA1ZDg2YWM1ZGU3MGFiNjg&n=%E2%80%94Pngtree%E2%80%942019+account+password+login+key_6676437.png"
+          alt=""
+          className="w-4/5 md:w-2/3 mx-auto"
+        />
       </div>
       <div className="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
         <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">

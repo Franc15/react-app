@@ -31,9 +31,6 @@ function Navbar() {
           <Link to="/" className="mr-5 hover:text-gray-900">
             Home
           </Link>
-          <Link to="/services" className="mr-5 hover:text-gray-900">
-            Services
-          </Link>
           <Link to="/pricing" className="mr-5 hover:text-gray-900">
             Pricing
           </Link>

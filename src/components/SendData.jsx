@@ -23,14 +23,24 @@ export const SendData = () => {
     navigate("/login");
   }
 
+  let data = {};
+
   function handleClick() {
     console.log(localStorage.getItem("user"));
-    let data = {
+    data = {
       client: localStorage.getItem("user"),
       location: location,
       text: message,
       medium: medium,
     };
+
+    if (data.client && data.location && data.text && data.medium) {
+      console.log(data);
+      navigate("/checkout");
+    }
+  }
+
+  function handleSubmit() {
     fetch("https://django-cloudrun-lsmeeds47a-uc.a.run.app/textpackage/", {
       method: "POST",
       headers: {
@@ -123,7 +133,8 @@ export const SendData = () => {
             Proceed to Checkout
           </button>
           <p class="text-xs text-gray-500 mt-3">
-            You are just a few clicks away from sending your message to Mars.
+            You are just a few clicks away from sending your message utside the
+            world.
           </p>
         </div>
       </div>
@@ -160,13 +171,16 @@ export const SendDataImage = () => {
       text: message,
       medium: medium,
     };
-    fetch("https://django-cloudrun-lsmeeds47a-uc.a.run.app/textpackage/", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    })
+    fetch(
+      "https://django-cloudrun-lsmeeds47a-uc.a.run.app/textpackage/not-working-now",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      }
+    )
       .then((res) => res.json())
       .then((res) => {
         if (res) {
@@ -187,7 +201,7 @@ export const SendDataImage = () => {
   return (
     <section class=" body-font relative mr-4">
       <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-2">
-        Package Name: Novice
+        Package Name: POPULAR
       </h1>
       <div class="container px-5 py-12 mx-auto flex sm:flex-nowrap flex-wrap">
         <div class="lg:w-2/3 md:w-1/2 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
@@ -198,11 +212,11 @@ export const SendDataImage = () => {
         </div>
         <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
           <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">
-            Enter the text message
+            Enter the text message and a picture
           </h2>
           <p class="leading-relaxed mb-5 text-gray-600">
-            Write a message/quote that you want to be displayed with your name
-            outside earth
+            Write a message/quote that you want to be displayed and image you
+            want to be posted in the streets outside earth
           </p>
 
           <div class="relative mb-4">

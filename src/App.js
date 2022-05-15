@@ -19,7 +19,6 @@ export default function App() {
         <Route path="/" element={<Home />} exact />
         <Route path="login" element={<Login />} />
         <Route path="pricing" element={<Pricing />} />
-        <Route path="services" element={<Services />} />
         <Route path="testimonials" element={<Testimonials />} />
         <Route path="send" element={<SendData />} />
         <Route path="checkout" element={<Checkout />} />

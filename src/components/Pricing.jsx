@@ -15,6 +15,13 @@ const Pricing = () => {
         <div class="flex flex-wrap -m-4">
           <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
             <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
+              <div class="h-full text-center">
+                <img
+                  alt="testimonial"
+                  class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                  src="https://thumbs.dreamstime.com/b/closeup-young-caucasian-man-showing-stone-text-good-morning-written-holding-against-blue-sky-text-127125005.jpg"
+                />
+              </div>
               <h2 class="text-3xl tracking-widest title-font mb-1 font-medium">
                 Be Read!
               </h2>
@@ -80,6 +87,13 @@ const Pricing = () => {
 
           <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
             <div class="h-full p-6 rounded-lg border-2 border-red-500 flex flex-col relative overflow-hidden">
+              <div class="h-full text-center">
+                <img
+                  alt="testimonial"
+                  class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                  src="https://www.kindpng.com/picc/m/24-244709_del-vector-de-la-familia-png-download-happy.png"
+                />
+              </div>
               <span class="bg-red-500 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">
                 POPULAR
               </span>

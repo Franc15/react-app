@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Hero = () => {
   return (
     <section class="text-gray-600 body-font mx-2">
@@ -19,12 +21,16 @@ const Hero = () => {
             more memories!
           </p>
           <div class="flex justify-center">
-            <button class="inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">
-              Get Started
-            </button>
-            <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
-              Learn More
-            </button>
+            <Link to="/pricing">
+              <button class="inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">
+                Get Started
+              </button>
+            </Link>
+            <Link to="/learn">
+              <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
+                Learn More
+              </button>
+            </Link>
           </div>
         </div>
         <div class="relative lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
@@ -33,7 +39,7 @@ const Hero = () => {
             alt="hero"
             src="https://www.pngitem.com/pimgs/b/267-2675114_earth-cartoon-png.png"
           />
-          <div className="hidden absolute md:w-48 top-20 right-4 rounded-md p-4 text-black bg-white shadow-lg">
+          <div className="hidden md:block absolute md:w-48 top-20 right-4 rounded-md p-4 text-black bg-white shadow-lg">
             Hey, that's my picture on Mars😊😊
           </div>
 
